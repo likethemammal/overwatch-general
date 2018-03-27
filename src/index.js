@@ -1,1 +1,5 @@
-export default from './validations'
+import validations from './validations'
+
+export default {
+	validations,
+}
