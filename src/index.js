@@ -1,4 +1,4 @@
-import validations from './validations'
+import * as validations from './validations'
 
 export default {
 	validations,
