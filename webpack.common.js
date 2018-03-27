@@ -7,7 +7,7 @@ const path = require('path')
 
 const plugins = [
     new CopyWebpackPlugin([
-        { from: 'colors.less' }
+        { from: '*.less' }
     ])
 ]
 

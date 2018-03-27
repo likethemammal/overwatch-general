@@ -1,0 +1,17 @@
+@import "./variables.less";
+@import "./colors.less";
+
+
+._font_general {
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    font-family: 'Futura No 2. Semi Bold', Arial;
+}
+
+
+.__text {
+    composes: _font_general;
+    color: @gray;
+    font-size: 2.7rem;
+    line-height: @rowHeight;
+}
