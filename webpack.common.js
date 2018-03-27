@@ -3,11 +3,14 @@ const pixrem = require('pixrem')
 
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+
 const path = require('path')
 
 const plugins = [
     new CopyWebpackPlugin([
-        { from: '*.less' }
+        { from: '*.less' },
+        { from: '*.css' },
     ])
 ]
 
