@@ -1,7 +1,3 @@
-@import "./variables.less";
-@import "./colors.less";
-
-
 ._font_general {
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -11,7 +7,7 @@
 
 .__text {
     composes: _font_general;
-    color: @gray;
+    color: hsl(0, 0%, 90%);
     font-size: 27px;
-    line-height: @rowHeight;
+    line-height: 40px;
 }
