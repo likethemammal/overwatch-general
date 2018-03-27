@@ -1,10 +1,14 @@
 const autoprefixer = require('autoprefixer')
 const pixrem = require('pixrem')
 
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
 const path = require('path')
 
 const plugins = [
-
+    new CopyWebpackPlugin([
+        { from: 'colors.less' }
+    ])
 ]
 
 const css_loader = {
@@ -43,7 +47,7 @@ const config = {
         path:  path.resolve(__dirname, './lib'),
         publicPath: '/',
 
-        library: 'OverwatchSettingsStepper',
+        library: 'general',
         libraryTarget: 'umd',
     },
 
