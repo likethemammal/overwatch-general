@@ -4,10 +4,19 @@
     font-family: 'Futura No 2. Semi Bold', Arial;
 }
 
-
 .__text {
     composes: _font_general;
     color: hsl(0, 0%, 90%);
     font-size: 27px;
     line-height: 40px;
+}
+
+._icon_container {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    padding: 5px 7px;
+    vertical-align: middle;
+    left: -1px;
 }
