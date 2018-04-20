@@ -8,7 +8,7 @@
     composes: _font_general;
     color: hsl(0, 0%, 90%);
     font-size: 27px;
-    line-height: 40px;
+    line-height: 42px;
 }
 
 ._icon_container {
