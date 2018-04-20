@@ -1,7 +1,7 @@
 ._font_general {
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    font-family: 'Futura No 2 D Semi Bold', Arial;
+    font-family: 'Futura No 2 D Semi Bold', Arial, sans-serif;
 }
 
 .__text {
