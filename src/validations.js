@@ -6,6 +6,12 @@ export const ACTIVE_INDEX_NONE = (activeIndex) => {
     }
 }
 
+export const ACTIVE_INDEX_TOO_SMALL = (activeIndex) => {
+    if (activeIndex < 0) {
+        throw 'activeIndex can\'t be negative'
+    }
+}
+
 export const ACTIVE_INDEX_TOO_LARGE = (activeIndex, options) => {
     if (activeIndex >= options.length) {
         throw 'activeIndex is greater than options length'
