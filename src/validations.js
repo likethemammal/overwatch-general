@@ -1,31 +1,37 @@
 import _ from 'underscore'
 
-export const ACTIVE_INDEX_NONE = (activeIndex) => {
-    if (activeIndex !== 0 && !activeIndex) {
-        throw 'No activeIndex defined'
+export const INDEX_NONE = (index) => {
+    if (index !== 0 && !index) {
+        throw 'No index defined'
     }
 }
 
-export const ACTIVE_INDEX_TOO_SMALL = (activeIndex) => {
-    if (activeIndex < 0) {
-        throw 'activeIndex can\'t be negative'
+export const INDEX_TOO_SMALL = (index) => {
+    if (index < 0) {
+        throw 'index can\'t be negative'
     }
 }
 
-export const ACTIVE_INDEX_TOO_LARGE = (activeIndex, options) => {
-    if (activeIndex >= options.length) {
-        throw 'activeIndex is greater than options length'
+export const INDEX_TOO_LARGE = (index, options) => {
+    if (index >= options.length) {
+        throw 'index is greater than options length'
     }
 }
 
-export const ACTIVE_INDEX_NOT_NUMBER = (activeIndex) => {
-    if (!_.isNumber(activeIndex)) {
-        throw 'activeIndex is not a number'
+export const INDEX_NOT_NUMBER = (index) => {
+    if (!_.isNumber(index)) {
+        throw 'index is not a number'
     }
 }
 
-export const OPTIONS_NONE = (activeIndex, options) => {
+export const OPTIONS_NONE = (index, options) => {
     if (!options || !options.length) {
         throw 'No options defined or options.length'
+    }
+}
+
+export const OPTIONS_TOO_SMALL = (index, options) => {
+    if (index >= options.length) {
+        throw 'options length is '
     }
 }
