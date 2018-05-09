@@ -32,6 +32,6 @@ export const OPTIONS_NONE = (index, options) => {
 
 export const OPTIONS_TOO_SMALL = (index, options) => {
     if (index >= options.length) {
-        throw 'options length is '
+        throw 'options length is too small'
     }
 }
