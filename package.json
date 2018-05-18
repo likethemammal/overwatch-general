@@ -31,6 +31,7 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "@likethemammal/general-components": "^0.1.17",
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.24.1",
     "babel-jest": "^21.2.0",
