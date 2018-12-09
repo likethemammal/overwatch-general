@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Futura No 2 D Semi Bold";
     src:
-        url("https://cdn.rawgit.com/Resike/Overwatch/2580a73d/Fonts/Futura.ttf") format('truetype'),
+        url("https://cdn.jsdelivr.net/gh/Resike/Overwatch@2580a73d/Fonts/Futura.ttf") format('truetype'),
         url("https://us.battle.net/forums/static/fonts/f014015d/f014015d.woff") format("woff");
 }
 
